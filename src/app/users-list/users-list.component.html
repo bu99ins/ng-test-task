@@ -1,0 +1,7 @@
+<div class="app-users-list">
+  <div class="app-paging">
+      <button type="button" (click)="previousPage()" class="app-btn-previous">Previous</button>
+      <button type="button" (click)="nextPage()" class="app-btn-next">Next</button>
+  </div>
+  <app-user-card *ngFor="let user of users" [user]="user"></app-user-card>
+</div>
